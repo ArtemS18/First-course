@@ -1,0 +1,20 @@
+﻿Любви, надежды, тихой славы
+
+гружено "C:\Windows\System32\kernel32.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windo ws\ System 32\Ker nelBase.dll". 
+"l ab 07.exe" (Win 32). Загружено "C:\W indows\System32\msvcp140d.dll". 
+"lab07 .exe" (Win32). Загружено "C:\Window s\System32\v c runtime140d.dll". 
+"lab07. exe" (Win32). Загружено "C:\Windo ws\Syst em32\vcru ntime140_1d.dll". 
+"lab07.e xe" (Win32). Загружено "C:\Window s\System32\uc rtbased.dll". 
+Поток 0x3 e24 за  вершился с кодом 0 (0x0).
+"lab07. exe " (Win32). Загружено "C:\Wi
+Любви, надежды, тихой славы
+
+гружено "C:\Windows\System32\kernel32.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windo ws\ System 32\Ker nelBase.dll". 
+"l ab 07.exe" (Win 32). Загружено "C:\W indows\System32\msvcp140d.dll". 
+"lab07 .exe" (Win32). Загружено "C:\Window s\System32\v c runtime140d.dll". 
+"lab07. exe" (Win32). Загружено "C:\Windo ws\Syst em32\vcru ntime140_1d.dll". 
+"lab07.e xe" (Win32). Загружено "C:\Window s\System32\uc rtbased.dll". 
+Поток 0x3 e24 за  вершился с кодом 0 (0x0).
+"lab07. exe " (Win32). Загружено "C:\Wi

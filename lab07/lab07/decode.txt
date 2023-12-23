@@ -1,0 +1,28 @@
+"lab07.exe" (Win32). Загружено "C:\Users\Gkovd\source\repos\lab07\x64\Debug\lab07.exe". Символы загружены.
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\ntdll.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\kernel32.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\KernelBase.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\msvcp140d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140_1d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\ucrtbased.dll". 
+Поток 0x3e24 завершился с кодом 0 (0x0).
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\kernel.appcore.dll". "lab07.exe" (Win32). Загружено "C:\Users\Gkovd\source\repos\lab07\x64\Debug\lab07.exe". Символы загружены.
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\ntdll.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\kernel32.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\KernelBase.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\msvcp140d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140_1d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\ucrtbased.dll". 
+Поток 0x3e24 завершился с кодом 0 (0x0).
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\kernel.appcore.dll". "lab07.exe" (Win32). Загружено "C:\Users\Gkovd\source\repos\lab07\x64\Debug\lab07.exe". Символы загружены.
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\ntdll.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\kernel32.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\KernelBase.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\msvcp140d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\vcruntime140_1d.dll". 
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\ucrtbased.dll". 
+Поток 0x3e24 завершился с кодом 0 (0x0).
+"lab07.exe" (Win32). Загружено "C:\Windows\System32\kernel.appcore.dll". Я помню чудное мгновенье:
