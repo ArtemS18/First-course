@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Dict.cpp" />
     <ClCompile Include="lab09.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Dict.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dict.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
