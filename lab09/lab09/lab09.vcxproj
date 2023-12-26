@@ -130,10 +130,10 @@
     <ClCompile Include="lab09.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dict.hpp" />
+    <Text Include="dict.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="dict.txt" />
+    <ClInclude Include="Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

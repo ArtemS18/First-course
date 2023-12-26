@@ -20,11 +20,11 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dict.hpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <Text Include="dict.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="dict.txt" />
+    <ClInclude Include="Header.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

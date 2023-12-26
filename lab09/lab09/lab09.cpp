@@ -1,18 +1,5 @@
-﻿#include <iostream>
-#include <fstream>
+﻿#include "Header.h"
 using namespace std;
-
-const int max_size = 100;
-const int l_word = 31;
-
-struct Dictionary {
-    char* eng;
-    char* rus;
-
-};
-
-Dictionary dict[max_size];
-int len = 0;
 
 int Menu() {
     int choose;
@@ -28,7 +15,7 @@ int Menu() {
     return choose;
 }
 
-bool Equals(char * element, char* word) {
+bool Equals(char* element, char* word) {
     bool f2 = 1;
     if (strlen(element) == strlen(word)) {
         for (int g = 0; g < strlen(word) + 1; g++) {
@@ -46,7 +33,7 @@ bool Equals(char * element, char* word) {
     return f2;
 }
 
-int CheckWord( char * word, int mode) {
+int CheckWord(char* word, int mode) {
     for (int i = 0; i < len; i++) {
         if (mode == 1) {
             if (Equals(dict[i].eng, word)) {
@@ -58,7 +45,7 @@ int CheckWord( char * word, int mode) {
                 return i;
             }
         }
-      
+
         else if (mode == 3) {
             if (Equals(dict[i].rus, word) || Equals(dict[i].eng, word)) {
                 return i;
@@ -89,10 +76,10 @@ bool Compare(char* word1, char* word2) {
     }
 }
 
-void Sorted(){
+void Sorted() {
     for (int i = 0; i < len; i++) {
-        for (int g = 0; g < len - i-1; g++) {
-            if (Compare(dict[g].eng, dict[g+1].eng)) {
+        for (int g = 0; g < len - i - 1; g++) {
+            if (Compare(dict[g].eng, dict[g + 1].eng)) {
                 swap(dict[g], dict[g + 1]);
             }
         }
@@ -109,12 +96,12 @@ void AddWord() {
     bool f = true;
 
     for (int i = 0; i < len; i++) {
-        if (CheckWord( eng, 1) != -1) {
+        if (CheckWord(eng, 1) != -1) {
             f = false;
             break;
         }
     }
-   
+
     if (f) {
 
         dict[len].eng = new char[strlen(eng) + 1];
@@ -129,7 +116,7 @@ void AddWord() {
         cout << "Слово " << eng << " уже есть в словаре." << endl;
     }
 }
-void AddWord(char *eng, char* rus) {
+void AddWord(char* eng, char* rus) {
 
     bool f = true;
 
@@ -163,19 +150,19 @@ void PrintAllDict() {
 void RemoveWord() {
     char word[l_word];
     cout << "Что удалить?: "; cin >> word;
-    int index = CheckWord( word, 3);
+    int index = CheckWord(word, 3);
 
     if (index != -1) {
         Dictionary copy;
-        for (int i = index; i < len; i++) { 
+        for (int i = index; i < len; i++) {
             copy = dict[i + 1];
             dict[i] = copy;
         }
         len--;
-        cout << "Слово " << word << " удалено."<<endl;
+        cout << "Слово " << word << " удалено." << endl;
     }
     else {
-        cout << "Слово " << word << " не найдено."<<endl;
+        cout << "Слово " << word << " не найдено." << endl;
     }
 
 }
@@ -186,23 +173,23 @@ void SaveDict() {
     f.open(filename, ios::binary);
 
     for (int i = 0; i < len; i++) {
-        cout << dict[i].eng << ' ' << dict[i].rus;
-        f << dict[i].eng<< " "<< dict[i].rus << " \n";
+       // cout << dict[i].eng << ' ' << dict[i].rus;
+        f << dict[i].eng << " " << dict[i].rus << " \n";
     }
     f.close();
     cout << "Словарь сохранен в " << filename << endl;
 
 }
 
-void getWord(char* line, char* word, int &index) {
+void getWord(char* line, char* word, int& index) {
     int l_line = strlen(line) + 1;
     int index_w = 0;
-    while (line[index] != ' ' && line[index]!= '\n' && line[index]!='\0') {
+    while (line[index] != ' ' && line[index] != '\n' && line[index] != '\0' && int(line[index])!=13) {
         word[index_w] = line[index];
         index++;index_w++;
     }
     word[index_w] = '\0';
-    index ++;
+    index++;
 }
 
 
@@ -215,7 +202,7 @@ void DownloadDict() {
     char line[l_word * 2 + 2];
     char eng[l_word], rus[l_word];
 
-    while (f.getline(line, l_word*2+2)) {
+    while (f.getline(line, l_word * 2 + 2)) {
         int index = 0;
         getWord(line, eng, index);
         getWord(line, rus, index);
@@ -232,7 +219,7 @@ void Translete(int mode) {
         int index = CheckWord(eng_word, 1);
 
         if (index != -1) {
-            cout << "Перевод слова: "<< dict[index].rus << endl;
+            cout << "Перевод слова: " << dict[index].rus << endl;
         }
         else {
             cout << "Слово " << eng_word << " не найдено." << endl;
@@ -262,8 +249,9 @@ int main()
         << "4 - перевод слов с русского на английский \n"
         << "5 - вывод на экран словаря \n"
         << "6 - сохранение словаря в файл \n"
-        << "7 - загрузка словаря из файла\n"
-        << "8 - выход из программы\n";
+       // << "7 - загрузка словаря из файла\n"
+        << "7 - выход из программы\n";
+    DownloadDict();
     while (true) {
         switch (Menu()) {
         case 1: AddWord(); break;
@@ -272,8 +260,8 @@ int main()
         case 4: Translete(2); break;
         case 5: PrintAllDict(); break;
         case 6: SaveDict(); break;
-        case 7: DownloadDict(); break;
-        case 8: return 0;
+        //case 7: DownloadDict(); break;
+        case 7: return 0;
         default:
             cout << "Надо вводить число от 1 до 8" << endl;
             break;
